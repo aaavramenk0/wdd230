@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+}
+  
+header {
+    background: #ffb6c1;
+    padding: 2rem;
+    grid-column: 1 / 3;
+}
+nav {
+    grid-column: 1 / 3;
+    background-color: #bbeedd;
+    padding: 1rem;
+}
+main {
+    background: #ff7f50;
+    height: 100%;
+    padding: 1rem;
+}
+aside {
+    background: #ffff00;
+    grid-column: 2 / 3;
+    padding: 1rem;
+}
+footer {
+    background: #f5deb3;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 3;
+}
+  
