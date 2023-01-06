@@ -1,51 +1,80 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 body {
     font-family: 'Montserrat';
     font-weight: 400;
-    display: grid;
     height: 100vh;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto 1fr auto;
+    font-size: 16px;
 }
 nav {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     padding: 1rem;
     gap: 3rem;
 }
+nav a{
+    color: white;
+}
 header {
     font-weight: 400;
-    padding: 2rem;
-    grid-column: 1 / 4;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+header img {
+    width: 150px;
 }
 main {
-    height: 100%;
     width: 760px;
     margin: 0 auto;
     text-align: center;
     padding: 1rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+main h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+.card {
+    background: rgb(166, 255, 206);
+    border-radius: 25px;
+    padding: 1rem;
+    box-shadow: 2px 3px rgb(0, 255, 98);
+}
+.weekly-activities {
+    grid-area: 2 / 1 / 4 / 2;
+}
+.project {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.information{
+    grid-area: 3 / 2 / 4 / 3;
 }
 main ul {
     list-style-type: none;
 }
+main section.card a {
+    text-decoration: underline;
+    color: blue;
+}
 footer {
     background: #f5deb3;
     padding: 2rem;
-    text-align: center;
-    grid-column: 1 / 4;
+    text-align: center
 }
 footer img {
     width: 18px;

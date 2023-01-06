@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+    main {
+        display: block;
+        width: 75%;
+    }
+    .card {
+        margin: 25px;
+    }
+}
