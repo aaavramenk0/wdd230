@@ -32,6 +32,9 @@ h1, h2 {
     font-weight: 400;
     color: var(--primary-color);
 }
+b {
+    font-family: var(--lora);
+}
 h1 {
     font-size: 25px;
 }
