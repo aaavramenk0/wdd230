@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat+Alternates:wght@400;900&family=Montserrat:wght@400;900&display=swap');
+
+:root {
+    --primary-color: #003844;
+    --secondary-color: #006C67;
+    --accent-color-1: #F194B4;
+    --accent-color-2: #FFB100;
+    --accent-color-3: #FFEBC6;
+
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --montserrat-alternates: 'Montserrat Alternates', sans-serif; 
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--montserrat);
+    
+}
+header {
+    width: 1440px;
+    margin: 0 auto;
+    
+}
+h1, h2 {
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+h1 {
+    font-size: 25px;
+}
+ul {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+.wireframes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.wireframes img {
+    border: 1px solid #000;
+}
