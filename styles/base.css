@@ -25,6 +25,12 @@ nav {
 nav a{
     color: white;
 }
+.invisible {
+    display: none;
+}
+nav span {
+    cursor: pointer;
+}
 header {
     font-weight: 400;
     padding: 1rem;
