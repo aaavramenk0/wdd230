@@ -105,6 +105,7 @@ main {
     color: var(--secondary-color);
 }
 .call-to-action-btn {
+    color: var(--background-color);
     background-color: var(--links-color);
     outline: none;
     padding: 16px;
@@ -112,9 +113,16 @@ main {
     border-radius: 50px;
     border: 1px solid var(--links-color);
     font-size: 26px;
-    color: var(--background-color);
 }
-
+.call-to-action-btn:hover {
+    background-color: var(--background-color);
+    color: var(--links-color);
+}
+.events-heading {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 15px;
+}
 footer {
     
 }
