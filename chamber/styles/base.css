@@ -78,6 +78,42 @@ nav a:hover {
 main {
     
 }
+.hero-block {
+    display: flex;
+    padding: 0 50px;
+    justify-content: center;
+    gap: 50px;
+}
+.hero-image {
+    border-radius: 50px;
+    height: 70vh;
+}
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-heading {
+    font-size: 34px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+.hero-description-content {
+    line-height: 2;
+    font-size: 20px; 
+    font-family: var(--text-font);
+    color: var(--secondary-color);
+}
+.call-to-action-btn {
+    background-color: var(--links-color);
+    outline: none;
+    padding: 16px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--links-color);
+    font-size: 26px;
+    color: var(--background-color);
+}
 
 footer {
     
