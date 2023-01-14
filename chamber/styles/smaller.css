@@ -14,9 +14,12 @@
         font-size: 36px;
         cursor: pointer;
     }
+    .hero-block {
+        display: flex;
+        flex-direction: column;
+    }
     .hero-image {
-        border-radius: 50px;
-        height: 40vh;
+        height: 100%;
     }
     .hero-block {
         gap: 10px;
@@ -28,14 +31,28 @@
     }
     .hero-description-content {
         line-height: 1.25;
-        font-size: 15px; 
+        font-size: 18px; 
     }
     .call-to-action-btn {
-        padding: 8px;
-        margin-top: 5px;
-        font-size: 15px;
+        padding: 16px;
+        margin-top: 10px;
+        font-size: 18px;
     }
     .hero-description-content span {
         display: none;
+    }
+    #events {
+        margin-top: 25px;
+    }
+    .events-heading {
+        font-size: 24px;
+    }
+    .events {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .event-card {
+        width: 100%;
     }
 }

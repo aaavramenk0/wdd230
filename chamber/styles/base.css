@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--headings-color);
     font-family: var(--headings-font);
 }
+p {
+    font-family: var(--text-font);
+}
 a {
     text-decoration: none;
     color: var(--links-color);
@@ -74,10 +77,6 @@ nav a:hover {
 #menu-btn {
     display: none;
 }
-
-main {
-    
-}
 .hero-block {
     display: flex;
     padding: 0 50px;
@@ -97,11 +96,11 @@ main {
     font-size: 34px;
     padding-bottom: 12px;
     text-align: center;
+    text-decoration: underline;
 }
 .hero-description-content {
     line-height: 2;
     font-size: 20px; 
-    font-family: var(--text-font);
     color: var(--secondary-color);
 }
 .call-to-action-btn {
@@ -113,16 +112,78 @@ main {
     border-radius: 50px;
     border: 1px solid var(--links-color);
     font-size: 26px;
+    font-family: var(--links-font);
 }
 .call-to-action-btn:hover {
     background-color: var(--background-color);
     color: var(--links-color);
 }
+#events {
+    margin-top: 75px;
+    padding: 0 50px;
+}
 .events-heading {
     text-align: center;
-    font-size: 26px;
+    font-size: 34px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+.events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.event-card {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.event-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.event-description {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.event-button {
+    color: var(--background-color);
+    background-color: var(--links-color);
+    padding: 16px 32px;
+    margin-top: 16px;
+    border-radius: 50px;
+    border: 1px solid var(--links-color);
+    font-size: 20px;
+    font-family: var(--links-font);
+}
+.event-button:hover {
+    background-color: var(--background-color);
+    color: var(--links-color);
+}
+#weather, #spotlights {
+    padding: 15px 50px;
     margin-top: 15px;
 }
+.weather-heading, .spotlights-heading {
+    text-align: center;
+    font-size: 34px;
+    text-decoration: underline;
+}
 footer {
-    
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+}
+.footer-name, .footer-course, .footer-date {
+    color: var(--background-color);
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--text-font);
+    font-weight: 400;
 }

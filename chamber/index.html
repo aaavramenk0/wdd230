@@ -28,36 +28,62 @@
 
         <nav>
             <a href="#top">Home</a>
-            <a href="#top">Portfolio</a>
-            <a href="#top">Contact us</a>
-            <a href="#top">Join us</a>
+            <a href="#about-me">About me</a>
+            <a href="#events">Events</a>
+            <a href="#weather">Weather</a>
+            <a href="#spotlights">Spotlights</a>
 
             <span class="material-symbols-outlined" id="menu-btn">menu</span>
         </nav>
     </div>
     <main>
-        <div class="hero-block">
+        <div class="hero-block" id="about-me">
             <img src="images/hero-image.png" alt="Image of the owner - Oleksandr Avramenko" class="hero-image">
             <div class="hero-description">
                 <h2 class="hero-heading">About me</h2>
                 <p class="hero-description-content">As the owner of Dallas Chamber of Commerce, I have dedicated my career to helping businesses establish a strong online presence. <span>I possess a deep understanding of the latest web development technologies and design trends, which allows me to create custom websites that are not only visually stunning, but also highly functional and user-friendly. <br> I am passionate about helping businesses succeed online and I am committed to providing my clients with the highest level of customer service. I am always available to answer questions and provide guidance throughout the website development process. <br>Thank you for considering Dallas Chamber of Commerce for your web development needs. I look forward to the opportunity to work with you and help your business thrive online.</span></p>
-                <button class="call-to-action-btn">Join our Dallas Chamber of Commerce clients team</button>
+                <button class="call-to-action-btn" id="join-us-btn">Join our Dallas Chamber of Commerce clients team</button>
             </div>
         </div>
 
-        <div class="events">
+        <section id="events">
             <h2 class="events-heading">Our events</h2>
-            <div class="event-card">
-                <h3 class="event-heading">Free brief meeting designer</h2>
-                <p class="event-description">Visit our brief meeting with the designer. You will get an introduction to design and understand your main needs for you online presence</p>
+            <div class="events">
+                <div class="event-card">
+                    <h3 class="event-heading">Free brief meeting designer</h2>
+                    <p class="event-description">Visit our brief meeting. You will get an introduction to design and understand your main needs for you online presence</p>
+                    <a href="#" class="event-button">Join event</a>
+                </div>
+                <div class="event-card">
+                    <h3 class="event-heading">Conference with member of out team</h2>
+                    <p class="event-description">Visit our conference meeting. We will demonstrate services and products which we provide.</p>
+                    <a href="#" class="event-button">Join event</a>
+                </div>
+                <div class="event-card">
+                    <h3 class="event-heading">Networking event</h2>
+                    <p class="event-description">Visit networking event to connect with other professionals in the industry, such as designers, marketers, and other business owners.</p>
+                    <a href="#" class="event-button">Join event</a>
+                </div>
             </div>
-        </div>
+        </section>
         
+        <section id="weather">
+            <h2 class="weather-heading">Weather section here</h2>
+        </section>
+
+        <section id="spotlights">
+            <h2 class="spotlights-heading">Spotlights section here</h2>
+        </section>
 
     </main>
 
     <footer>
-        Footer
+        <h2 class="footer-name">Oleksandr Avramenko</h2>
+        <h2 class="footer-course">Course for BYU-Idaho WDD-230</h2>
+        <p class="footer-date" id="lastModified">Last Modification:</p>
+        
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
