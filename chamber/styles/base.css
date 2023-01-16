@@ -74,6 +74,9 @@ nav a:hover {
     text-decoration: underline;
     
 }
+#menu-btn {
+    display: none;
+}
 #overlay {
     display: none;
 }
