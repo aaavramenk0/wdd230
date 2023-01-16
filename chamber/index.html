@@ -15,6 +15,7 @@
     <meta property="og:image" content="https://www.google.com/maps/vt/data=DMV6p0ScLYGhJqdWt44PGNb95vaZp3W51ObgdQOZlrijShaO5IYbH2JROoT8_bG_GAEbdoaFO9GNdopY0bQN5aQy0YGssBucytSKNF7KEo4r6j8jKpZ9wEGCLMYFP1YtkdrZMucSBPA39wUC8h3c9eqIs4yo5EdArpwyexY__sdPJrgjihIZWB2wjddAAc1MxjF-7BT6d5kSKtO_1MQiVkse2kRLzEyeunSXLqEnQaUKR7dt-EUmwS8e8zek">
     <!-- Link to a google icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Links to CSS -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/smaller.css">
@@ -32,9 +33,17 @@
             <a href="#events">Events</a>
             <a href="#weather">Weather</a>
             <a href="#spotlights">Spotlights</a>
-
             <span class="material-symbols-outlined" id="menu-btn">menu</span>
         </nav>
+        <div class="mobile-overlay">
+            <div class="overlay" id="overlay">
+                <a href="#top">Home</a>
+                <a href="#about-me">About me</a>
+                <a href="#events">Events</a>
+                <a href="#weather">Weather</a>
+                <a href="#spotlights">Spotlights</a> 
+            </div>
+        </div>
     </div>
     <main>
         <div class="hero-block" id="about-me">
@@ -85,5 +94,6 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
 </body>
 </html>
