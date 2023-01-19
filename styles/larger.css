@@ -27,4 +27,8 @@
         font-size: 2rem;
         font-family:"Great Vibes", serif;
     }
+    iframe  {
+        width: 90vw;
+        height: 50vh;
+    }
 }
