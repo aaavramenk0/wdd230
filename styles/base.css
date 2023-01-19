@@ -53,7 +53,31 @@ main {
     grid-row-gap: 15px;
 }
 .hero {
+	margin: 10px auto;
+	position: relative;
+	height: 300px;
     grid-area: 1 / 1 / 2 / 3;
+}
+.hero img {
+	object-fit: cover;
+}
+.herolabel {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
 }
 .mobile-temple-picture {
     display: none;
@@ -86,6 +110,11 @@ main section.card a {
     text-decoration: underline;
     color: blue;
 }
+map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 footer {
     background: #f5deb3;
     padding: 2rem;
@@ -94,4 +123,5 @@ footer {
 footer img {
     width: 18px;
 }
+
   

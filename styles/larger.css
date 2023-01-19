@@ -13,4 +13,18 @@
     .desktop-temple-picture {
         display: none;
     }
+    .herolabel {
+        position: absolute;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        font-family:"Great Vibes", serif;
+    }
 }

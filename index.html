@@ -30,15 +30,18 @@
         <span class="material-symbols-outlined" id="menu-btn">menu</span>
     </nav>
     <header>
-        <img src="images/photo-of-me.jpg" alt="Photo of Oleksandr Avramenko">
+        <img src="images/photo-of-me.webp" alt="Photo of Oleksandr Avramenko" loading="lazy">
         <h1>Oleksandr Avramenko</h1>
     </header>
     <main>
         <div class="hero">
            <picture>
-                <img src="images/temple-image.webp" alt="" class="mobile-temple-picture">
-                <img src="images/temple-image.webp" alt="" class="desktop-temple-picture">
+                <img src="images/temple-image.webp" alt="" class="mobile-temple-picture" loading="lazy">
+                <img src="images/temple-image.webp" alt="" class="desktop-temple-picture" loading="lazy">
             </picture> 
+            <div class="herolabel">
+                <p>Kyiv Ukraine Temple</p>
+            </div>
         </div>
         
         <h2>WDD 230: Course Activity Portal</h2>
@@ -63,8 +66,21 @@
         </section>
         <section class="card information">
             <h3>Information</h3>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
     </main>
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13243.04803465811!2d-84.84329579999999!3d33.9215243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1674166678606!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>  
+    </div>
+    
     <footer>
         <p>&copy;2023 Oleksandr Avramenko Ukraine <img src="images/ua-flag.png" alt=""> -> Dallas,GA <img src="images/us-flag.png" alt=""></p>
         <p class="highlight" id="lastModified">Last Modification: </p>
@@ -73,5 +89,6 @@
     <!-- Link to JS-->
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/visits-counter.js"></script>
 </body>
 </html>
