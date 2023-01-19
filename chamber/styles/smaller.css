@@ -59,4 +59,25 @@
     .event-card {
         width: 100%;
     }
+
+    .main {
+        flex-direction: column;
+    }
+    .side-bar {
+        width: 100vw;
+    }
+    .city-map iframe {
+        width: 90vw;
+    }
+
+    .local-pictures {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .local-pictures img {
+        width: 45vw;
+        padding-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
 }
