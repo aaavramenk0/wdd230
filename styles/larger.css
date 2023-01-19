@@ -6,4 +6,11 @@
     .card {
         margin: 25px;
     }
+    .mobile-temple-picture{
+        display: block;
+        width: 100%;
+    }
+    .desktop-temple-picture {
+        display: none;
+    }
 }
