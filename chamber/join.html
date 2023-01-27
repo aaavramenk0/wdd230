@@ -46,7 +46,7 @@
         </div>
     </div>
     <main>
-        <form method="get" action="thankyou.html">
+        <form method="get" action="thankyou.html" id="form">
             <label for="firstname">First name: </label><input type="text" name="firstname" required>
             <label for="lastname">Last name: </label><input type="text" name="lastname" required>
             <label for="bus-pos-title">Business position: </label><input type="text" name="bus-pos-title">
@@ -55,17 +55,17 @@
             <label for="bus-name">Business name: </label><input type="text" name="bus-name" required>
             <label for="membership-plan">First name: </label>
             <select name="membership-plan" id="membership-plan">
-                <option value="">--Choose membership plan--</option>
+                <option value="">-- Choose membership plan --</option>
                 <option value="NP Membership">NP Membership</option>
                 <option value="Bronze Membership">Bronze Membership</option>
                 <option value="Silver Membership">Silver Membership</option>
                 <option value="Gold Membership">Gold Membership</option>
             </select>
-            <label for="bus-desc">Business description: </label><textarea name="bus-desc" id="bus-desc" cols="30" rows="10" >
+            <label for="bus-desc">Business description: </label><textarea name="bus-desc" id="bus-desc">
 
             </textarea>
-            <label for="firstname">First Name: </label><input type="datetime-local" name="cur-date" id="cur-date" hidden>
-            <label for="firstname">First Name: </label><input type="submit" value="Submit">
+            <input type="datetime-local" name="cur-date" id="cur-date" hidden>
+            <input type="submit" value="Submit" class="form-button">
         </form>
 
     </main>
