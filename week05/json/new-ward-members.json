@@ -1,0 +1,28 @@
+{
+    "familyName" : "Kelly",
+    "moveInDate" : "02/02/2023",
+    "amountOfPeople" : 4,
+    "isVisitedByBishopric" : true,
+    "familyMembers" : [
+      {
+        "name" : "James Kelly",
+        "gender" : "Male",
+        "birthdate" : "01/01/1959"
+      },
+      {
+        "name" : "Elizabeth Kelly",
+        "gender" : "Female",
+        "birthdate" : "07/04/1961"
+      },
+      {
+        "name" : "Larry Kelly",
+        "gender" : "Male",
+        "birthdate" : "03/05/2000"
+      },
+      {
+        "name" : "Lauren Kelly",
+        "gender" : "Female",
+        "birthdate" : "11/12/1995"
+      }
+    ]
+  }
