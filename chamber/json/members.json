@@ -1,0 +1,65 @@
+[
+    {
+        "companyName": "Kelly Landscapes Management",
+        "companyAdress": "551 Industrial Way North",
+        "companyPhoneNumber": "770-445-4459",
+        "companyWebsiteURL": "https://kellylandscapes.com",
+        "image": "images/klm.png",
+        "membershipLevel": "Gold Membership",
+        "companyPresidentName": "James Kelly"    
+    },
+    {
+        "companyName": "A&M Office Supply",
+        "companyAdress": "201- C International Pkwy",
+        "companyPhoneNumber": "(770) 443-1716",
+        "companyWebsiteURL": "http://amofficesupply.com/",
+        "image": "images/am.png",
+        "membershipLevel": "NP Membership",
+        "companyPresidentName": "Lark Mentin"    
+    },
+    {
+        "companyName": "All About Dogs Obedience Training",
+        "companyAdress": "35 Amber Trce Dallas GA 30132",
+        "companyPhoneNumber": "(770) 814-6030",
+        "companyWebsiteURL": "https://www.aadotraining.org/",
+        "image": "images/dog.png",
+        "membershipLevel": "Silver Membership",
+        "companyPresidentName": "Jennifer Tobias"    
+    },
+    {
+        "companyName": "Atlanta's Finest Catering",
+        "companyAdress": "13997 Veterans Memorial Hwy Winston GA 30187",
+        "companyPhoneNumber": "(404) 535-1965",
+        "companyWebsiteURL": "https://atlantasilverbacks.com/",
+        "image": "images/rest.png",
+        "membershipLevel": "Gold Membership",
+        "companyPresidentName": "Jessica Wilc"    
+    },
+    {
+        "companyName": "Chick-fil-A - Dallas",
+        "companyAdress": "300 Charles Watts Drive Dallas GA 30157",
+        "companyPhoneNumber": "(770) 445-7726",
+        "companyWebsiteURL": "https://www.chick-fil-a.com/",
+        "image": "images/cfl.png",
+        "membershipLevel": "Silver Membership",
+        "companyPresidentName": "Unknown"    
+    },
+    {
+        "companyName": "Decorative Funnel Cakes",
+        "companyAdress": "555 S Fortune Way Dallas GA 30157",
+        "companyPhoneNumber": "(404) 791-6158",
+        "companyWebsiteURL": "https://decorativefunnelcakes.com/",
+        "image": "images/dec.png",
+        "membershipLevel": "Gold Membership",
+        "companyPresidentName": "Klair Funnel"    
+    },
+    {
+        "companyName": "La Cocina Mexican Restaurant",
+        "companyAdress": "457 Nathan Dean Blvd #116 Dallas GA 30132",
+        "companyPhoneNumber": "(770) 445-2511",
+        "companyWebsiteURL": "http://www.mylacocina.com/",
+        "image": "images/mex.png",
+        "membershipLevel": "Gold Membership",
+        "companyPresidentName": "Saul Himenez" 
+    }
+]
