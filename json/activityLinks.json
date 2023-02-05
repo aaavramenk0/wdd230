@@ -1,0 +1,7 @@
+{
+    "week01": ["../week01/the-holy-grail/holygrail.html", "../week01/css-media-queries/media-query.html"],
+    "week02": ["../week02/design-principles/design.html", "https://codepen.io/aaavramenk0/pen/OJwpQVa", "../week02/dom-manipulation/bom.html"],
+    "week03": ["../week03/images/landscape.webp", "../week03/lazy-loading/lazyload.html"],
+    "week04": ["https://codepen.io/aaavramenk0/pen/KKBRdZQ", "../images/w3cschool.png"],
+    "week05": ["https://codepen.io/aaavramenk0/pen/ExpGXvj", "../week05/json/new-ward-members.json", "../week05/prophets/prophets.html", "../week05/weather/weather.html"]
+  }
