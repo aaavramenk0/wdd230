@@ -84,4 +84,9 @@
     textarea {
         width: 75vw;    
     }
+
+    #card {
+        display: flex;
+        flex-direction: column;
+    }
 }

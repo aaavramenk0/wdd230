@@ -1,14 +1,14 @@
 document.getElementById('lastModified').innerHTML = 'Last Modification: ' + document.lastModified;
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.6371&appid=7cf66b5215db60e56aa4e23f5e4ed5fb&units=imperial';
-const card = document.getElementById('card');
+const url = 'json/members.json';
+const card = document.getElementById('card')
 
-async function getWeather() {
+async function getMembers() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json(); 
-            console.log(data);
+            displayResults(data)
         } else {
             throw Error(await response.text());
         }
@@ -18,7 +18,23 @@ async function getWeather() {
 }
 
 function displayResults(data) {
-    
+    data.forEach(element => {
+        let companyName = document.createElement('h2').innerText = element.companyName;
+        let companyAdress = document.createElement('h3').innerText = element.companyAdress;
+        let companyPhoneNumber = document.createElement('h4').innerHTML = element.companyPhoneNumber;
+        let companyWebsiteURL = document.createElement('h4').innerText = element.companyWebsiteURL;
+        let companyImage = document.createElement('img');companyImage.src = element.image;
+        companyImage.alt =  "Picture of the " + element.companyName
+        let membershipLevel = document.createElement('h4').innerText = element.membershipLevel;
+        let companyPresidentName = document.createElement('h4').innerText = element.companyPresidentName;
+        let br = document.createElement('br')
+        let br2 = document.createElement('br')
+        let br3 = document.createElement('br')
+        let br4 = document.createElement('br')
+        let br5 = document.createElement('br')
+
+        card.append(companyImage, companyName, br,companyAdress,br2, companyPhoneNumber,br3, companyWebsiteURL,br4, companyPresidentName,br5, membershipLevel)
+    });
 }
 
-getWeather()
+getMembers()
