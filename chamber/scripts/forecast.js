@@ -35,19 +35,13 @@ const displayForecast = (data) => {
     const thirdMonth = new Date(data.list[16].dt_txt).getMonth() + 1
     const thirdDate = `${thirdMonth}/${thirdDay}/${thirdYear}` 
     const thirdDateTempF = data.list[16].main.temp;
-
-    console.log(data.list)
-    console.log(firstDate + ` = ${firstDateTempF}`, secondDate + ` = ${secondDateTempF}`, thirdDate + ` = ${thirdDateTempF}`)
-
     const dates = [firstDate, secondDate, thirdDate]
     const temps = [firstDateTempF, secondDateTempF, thirdDateTempF]
-
     for (let i = 0; i < dates.length; i++){
         const dayTemp = document.createElement('p').innerText = `${dates[i]} - ${temps[i]}F `;
         
         forecast.append(dayTemp, document.createElement('br'))
     };
-    console.log(dates, temps)
 }
 
 getForecast()
