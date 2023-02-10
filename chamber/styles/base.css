@@ -179,6 +179,10 @@ nav a:hover {
     font-size: 34px;
     text-decoration: underline;
 }
+.weather p{
+    width: 100vw;
+    text-align: center;
+}
 footer {
     background-color: var(--secondary-color);
     padding: 20px 0;

@@ -1,14 +1,16 @@
 document.getElementById('lastModified').innerHTML = 'Last Modification: ' + document.lastModified;
 
-const url = 'json/members.json';
-const card = document.getElementById('card')
+const currentTemperature = document.getElementById('cur-temp');
+const currentWeatherType = document.getElementById('cur-type');
 
-async function getMembers() {
+const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=33.9245&lon=-84.8413&appid=7cf66b5215db60e56aa4e23f5e4ed5fb&units=imperial'
+
+async function getWeather() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(weatherUrl);
         if (response.ok) {
-            const data = await response.json(); 
-            displayResults(data)
+            const data = await response.json();
+            displayWeather(data);
         } else {
             throw Error(await response.text());
         }
@@ -16,25 +18,14 @@ async function getMembers() {
         console.log(error)
     }
 }
+const displayWeather = (data) => {
+    const placeTempF = data.main.temp; // temp in F
+    const placeTempC = ((placeTempF - 32) * 0.556).toFixed(2); // temp in C
 
-function displayResults(data) {
-    data.forEach(element => {
-        let companyName = document.createElement('h2').innerText = element.companyName;
-        let companyAdress = document.createElement('h3').innerText = element.companyAdress;
-        let companyPhoneNumber = document.createElement('h4').innerHTML = element.companyPhoneNumber;
-        let companyWebsiteURL = document.createElement('h4').innerText = element.companyWebsiteURL;
-        let companyImage = document.createElement('img');companyImage.src = element.image;
-        companyImage.alt =  "Picture of the " + element.companyName
-        let membershipLevel = document.createElement('h4').innerText = element.membershipLevel;
-        let companyPresidentName = document.createElement('h4').innerText = element.companyPresidentName;
-        let br = document.createElement('br')
-        let br2 = document.createElement('br')
-        let br3 = document.createElement('br')
-        let br4 = document.createElement('br')
-        let br5 = document.createElement('br')
-
-        card.append(companyImage, companyName, br,companyAdress,br2, companyPhoneNumber,br3, companyWebsiteURL,br4, companyPresidentName,br5, membershipLevel)
-    });
+    const weatherType = data.weather[0].description
+    
+    currentTemperature.innerText = placeTempF + "F or " + placeTempC + "C";
+    currentWeatherType.innerHTML = weatherType.charAt(0).toUpperCase() + weatherType.slice(1); 
 }
 
-getMembers()
+getWeather()
