@@ -3,7 +3,7 @@
 :root {
     --headings-color: black; /* headings */
     --accent-color: #fff2b0; /* */
-    --links-color: #c000d2; /* links */
+    --links-color: #9600A3; /* links */
     --background-color: #FFEBC6; /* background */
 
     --headings-font: 'Lora', serif;
@@ -27,7 +27,7 @@ body {
     font-size: 16px;
 }
 
-nav {
+.navbar {
     background-color: black;
     color: white;
     display: flex;
@@ -36,14 +36,14 @@ nav {
     padding: 1rem;
     gap: 3rem;
 }
-nav a{
+.navbar a{
     color: white;
 }
 
 .invisible {
     display: none;
 }
-nav span {
+.navbar span {
     cursor: pointer;
 }
 header {
@@ -162,6 +162,7 @@ form label {
 footer {
     background: var(--background-color);
     padding: 2rem;
+    color: black;
     text-align: center
 }
 footer img {
