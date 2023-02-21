@@ -86,15 +86,48 @@
     </div>
     
     
-    <form action="" method="post">
+    <form method="get">
         <h2>Contact Form:</h2>
-        <label for="name">Your name: </label><input type="text" name="name" required>
-        <label for="email">Your email: </label><input type="email" name="email" required>
+        <div id="formmessage"></div>
+        <label for="name">Your name: </label><input type="text" name="name" id="name" required>
+        <label for="email">Your email: </label><input type="email" id="email" name="email" required>
         <label for="page-rating">Rate the Service [ <span id="rating">6</span> ]: </label><input type="range" min="1" max="10" id="page-rating" name="page-rating">
         <label for="username">Username: </label><input type="password" name="username" pattern="[a-zA-Z0-9]{5,12}" title="At least five characters and at most 12 characters and that at least one of the characters is not alpha-numeric" required id="username">
-        <label for="username-repeat">Repeat you username: </label><input type="password" name="username-repeat" required>
-        <input type="button" value="Submit" class="form-button" onclick="checkUsernameMatch()" id="username-repeat">
+        <label for="username-repeat">Repeat you username: </label><input type="password" name="username-repeat" required id="username-repeat">
+        <button type="submit" class="form-button" id="form-btn">Submit</button>
     </form>
+
+    <div class="table">
+        <h2>Form input</h2>
+
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+                
+            </tr>
+            <tr>
+                <td>Name: </td>
+                <td id="output-name">Oleksandr</td>
+                
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td id="output-email">email</td>
+                
+            </tr>
+            <tr>
+                <td>Rating: </td>
+                <td id="output-rating">4</td>
+                
+            </tr>
+            <tr>
+                <td>Username: </td>
+                <td id="output-username">username</td>
+            </tr>
+        </table>
+    </div>
+    
 
     <footer>
         <p>&copy;<span id="copy-year"></span>  Oleksandr Avramenko Ukraine <img src="images/ua-flag.png" alt=""> -> Dallas,GA <img src="images/us-flag.png" alt=""></p>

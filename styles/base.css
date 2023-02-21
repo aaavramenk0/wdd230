@@ -146,6 +146,14 @@ form, table {
 form label {
     margin-top: 10px;
 }
+#formmessage {
+	display: none;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #aa3333;
+	color: #fff;
+	padding: 0.5rem;
+}
 .form-button {
     margin-top: 15px;
     border-radius: 15px;
@@ -156,9 +164,28 @@ form label {
     font-family: var(--links-font);
     color: var(--links-color);
     margin-bottom: 15px;
+    cursor: pointer;
     background-color: var(--background-color);
 }   
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table{
+    text-align: center;
+    display: none;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
 footer {
     background: var(--background-color);
     padding: 2rem;
